@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)http://localhost/Namma-Metro-Online-Management-System/stations.php -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>DBMS Project</title>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./DBMS Project_files/style.css" type="text/css">
+  <link rel="stylesheet" href="./DBMS Project_files/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com/">
+  <link href="./DBMS Project_files/css2" rel="stylesheet">
+
+  <style type="text/css">
+
+  .demo-content{
+          padding: 150px;
+          font-size: 18px;
+          text-align: center;
+          background: #8eccc6;
+          margin:50px 22em 50px 22em;
+
+        }
+  .demo-content.bg-alt{
+    background: #abb1b8;
+  }
+  .container {
+  position: absolute;}
+
+.container img {
+  width: 1230px;
+  height: 550px;
+}
+
+.container .btn1 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: solid;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+.container .btn2 {
+  position: absolute;
+  top: 20%;
+  left: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  background-color: #555;
+  color: white;
+  font-size: 16px;
+  padding: 12px 24px;
+  border: solid;
+  cursor: pointer;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.container .btn1:hover {
+  background: #3cc943;
+}
+
+.container .btn2:hover {
+  background: #7e3878;
+}
+
+.popup .overlay{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vh;
+  height: 100vh;
+  background: rgba(0,0,0,0.7);
+  z-index: -1;
+  display: none;
+}
+
+.popup .content{
+  position: absolute;
+  top: 50%:
+  left: 50%;
+  transform: translate(-50%,-50%) scale(0);
+  background: #fff;
+  width: 450px;
+  height: 220px;
+  z-index: 2;
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.popup .close-btn{
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height: 30px;
+  background: #222;
+  color: #fff;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.popup .active .overlay{
+  display: block;
+}
+
+.popup .active .content{
+  transition: all 300ms ease-in-out;
+  transform: translate(-50%,-50%) scale(1);
+}
+
+  </style>
+  <script type="text/javascript">
+    function togglePopup(){
+      document.getElementsById("popup-1").classList.toggle("active");
+    }
+  </script>
+</head>
+<body data-new-gr-c-s-check-loaded="14.991.0" data-gr-ext-installed="">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="http://localhost/Namma-Metro-Online-Management-System/contact_us.php">Contact Us</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost/Namma-Metro-Online-Management-System/index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost/Namma-Metro-Online-Management-System/login.php">Login</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost/Namma-Metro-Online-Management-System/smart_cardrequest.php">Smart Card Request</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost/Namma-Metro-Online-Management-System/travel_info.php">Travel Info</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="http://localhost/Namma-Metro-Online-Management-System/fare.php">Fare<span class="sr-only">(current)</span>
+        </a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link" href="http://localhost/Namma-Metro-Online-Management-System/stations.php"><strong>Stations</strong></a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container">
+  <img src="./DBMS Project_files/mapbg.jpg" alt="bg img">
+  <button class="btn1" onclick="togglePopup()"><strong>Green Line</strong></button>
+  
+  <button class="btn2" onclick="togglePopup()"><strong>Purple Line</strong></button>
+</div>
+
+<div class="popup" id="popup-1">
+  <div class="overlay"></div>
+  <div class="content">
+    <div class="close-btn" onclick="togglePopup()">×</div>
+    <h1>Green Line</h1>
+    <ul>
+              <br>
+<b>Fatal error</b>:  Cannot redeclare OpenCon() (previously declared in C:\xampp\htdocs\Namma-Metro-Online-Management-System\php\connect.php:5) in <b>C:\xampp\htdocs\Namma-Metro-Online-Management-System\php\connect.php</b> on line <b>11</b><br>
+</ul></div></div></body></html>
